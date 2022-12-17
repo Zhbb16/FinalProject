@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Projet final</string>
+    <string name="home_tab">Domicile</string>
+    <string name="favorite_tab">Préféré</string>
+    <string name="search">Chercher</string>
+    <string name="open">Ouvrir</string>
+    <string name="close">Fermer</string>
+    <string name="reset">Réinitialiser</string>
+    <string name="the_guardian_new_article_search">Recherche d\'articles de presse The Guardian</string>
+    <string name="enter_keyword_to_search">Entrez le mot-clé pour rechercher</string>
+    <string name="home_menu">Domicile</string>
+    <string name="favorite_menu">Préféré</string>
+    <string name="exit_menu">Sortir</string>
+    <string name="toast_favorite">Vous avez cliqué sur Favoris</string>
+    <string name="title">Titre</string>
+    <string name="title_content">contenu_du_titre</string>
+    <string name="url">URL</string>
+    <string name="section">Section</string>
+    <string name="section_content">scontenu_de_la_rubrique</string>
+    <string name="add_to_favorite">Ajouter aux Favoris</string>
+    <string name="url_content">contenu de l\'URL</string>
+
+</resources>

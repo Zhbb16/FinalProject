@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailsFragmentActivity"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/toolbar"/>
+
+        <androidx.drawerlayout.widget.DrawerLayout
+        android:id="@+id/drawer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:openDrawer="start">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/title"
+            android:layout_marginStart="8dp"
+            android:textSize="20sp"
+            tools:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/title_content"
+            android:layout_width="wrap_content"
+            android:layout_height="31dp"
+            android:layout_marginStart="8dp"
+            android:text="@string/title_content" />
+
+        <TextView
+            android:id="@+id/URL"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/url"
+            android:textSize="20sp"
+            android:layout_marginStart="8dp"
+            tools:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/URL_content"
+            android:layout_width="wrap_content"
+            android:layout_height="29dp"
+            android:layout_marginStart="8dp"
+            android:text="@string/url_content" />
+
+        <TextView
+            android:id="@+id/section"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/section"
+            android:textSize="20sp"
+            android:layout_marginStart="8dp"
+            tools:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/section_content"
+            android:layout_width="wrap_content"
+            android:layout_height="33dp"
+            android:layout_marginStart="8dp"
+            android:text="@string/section_content" />
+
+        <Switch
+            android:id="@+id/add_switch"
+            android:layout_width="211dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="@string/add_to_favorite"
+            android:textColor="#757272"
+            android:textSize="20sp"
+            tools:ignore="UseSwitchCompatOrMaterialXml"
+            tools:textStyle="bold" />
+
+    </LinearLayout>
+
+        <com.google.android.material.navigation.NavigationView
+            android:id="@+id/nav_view"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:fitsSystemWindows="true"
+            app:headerLayout="@layout/header_layout"
+            app:menu="@menu/example_menu_list" />
+    </androidx.drawerlayout.widget.DrawerLayout>
+
+</LinearLayout>

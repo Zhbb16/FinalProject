@@ -1,3 +1,23 @@
 <resources>
     <string name="app_name">Final Project</string>
+    <string name="home_tab">Home</string>
+    <string name="favorite_tab">Favorite</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+    <string name="the_guardian_new_article_search">The Guardian News Article Search</string>
+    <string name="enter_keyword_to_search">Enter keyword to search</string>
+    <string name="search">Search</string>
+    <string name="reset">Reset</string>
+    <string name="home_menu">Home</string>
+    <string name="favorite_menu">Favorite</string>
+    <string name="exit_menu">Exit</string>
+    <string name="toast_favorite">You clicked on Favorite</string>
+    <string name="title">Title</string>
+    <string name="title_content">title_content</string>
+    <string name="url">URL</string>
+    <string name="section">Section</string>
+    <string name="section_content">section_content</string>
+    <string name="add_to_favorite">Add to Favorite</string>
+    <string name="url_content">url_content</string>
+
 </resources>

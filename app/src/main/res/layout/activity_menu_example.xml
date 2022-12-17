@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/toolbar"/>
+
+    <androidx.drawerlayout.widget.DrawerLayout
+        android:id="@+id/drawer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:openDrawer="start">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginLeft="8dp"
+                android:text="@string/the_guardian_new_article_search"
+                android:textSize="20sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/inputText"
+                    android:layout_width="280dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="5dp"
+                    android:hint="@string/enter_keyword_to_search"
+                    android:minHeight="48dp" />
+
+                <ImageButton
+                    android:id="@+id/imageButton2"
+                    android:layout_width="57dp"
+                    android:layout_height="57dp"
+                    android:contentDescription="@string/search"
+                    app:srcCompat="@drawable/magnifying" />
+
+                <ImageButton
+                    android:id="@+id/imageButton3"
+                    android:layout_width="57dp"
+                    android:layout_height="57dp"
+                    android:contentDescription="@string/reset"
+                    app:srcCompat="@drawable/close" />
+
+            </LinearLayout>
+
+            <ProgressBar
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginBottom="10dp"
+                android:visibility="visible"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView"
+                app:layout_constraintEnd_toEndOf="@+id/imageView"
+                app:layout_constraintStart_toStartOf="@+id/imageView" />
+
+
+            <ListView
+                android:id="@+id/listView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="8dp" />
+
+<!--                <androidx.swiperefreshlayout.widget.SwipeRefreshLayout-->
+<!--                    android:id="@+id/refresher"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="305dp">-->
+
+<!--                    <ListView-->
+<!--                        android:id="@+id/theListView"-->
+<!--                        android:layout_width="410dp"-->
+<!--                        android:layout_height="354dp"-->
+<!--                        app:layout_constraintEnd_toEndOf="parent"-->
+<!--                        app:layout_constraintStart_toStartOf="parent"-->
+<!--                        app:layout_constraintTop_toTopOf="parent" />-->
+<!--                </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>-->
+
+
+        </LinearLayout>
+
+        <com.google.android.material.navigation.NavigationView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:fitsSystemWindows="true"
+            app:headerLayout="@layout/header_layout"
+            app:menu="@menu/example_menu_list"
+            android:id="@+id/nav_view"/>
+    </androidx.drawerlayout.widget.DrawerLayout>
+
+</LinearLayout>
